@@ -152,7 +152,7 @@ skinparam linetype ortho
     WorkSchedule "1..n" -- "1" Employees : employee_id
     WorkSchedule "1..n" -- "1" OfficeHours : office_hours_id
     
-    AssignedCases "0..n" -- "0..n" Employees : employee_id
-    AssignedCases "0..n" -- "0..n" Cases : case_id
+    AssignedCases "0..n" -- "0..1" Employees : employee_id
+    AssignedCases "0..n" -- "0..1" Cases : case_id
     
 @enduml
