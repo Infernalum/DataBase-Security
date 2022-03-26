@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2C72D3D-C930-46D9-B6DE-804632B57680" schemaObject="EEBBB7CD-7796-D5C6-5958-C075BBD5B84A" name="ASSIGNEDCASES">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>ASSIGNEDCASES</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>C194EE89-717B-0FFB-A821-966EDDA1A2B3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="6212EEB8-0750-412C-F0C8-14D720AE87F6">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>ASSIGNEDCASES</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>2E0F03DE-76E6-1BF7-4991-F9E168022ABE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,7,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3902003-AB1C-0153-707C-10BB20B512F3" referredColumn="201694B1-B6D9-E368-C072-6A6B5A8FC057"/>
+</associations>
+</Column>
+<Column name="CASE_ID" id="7127CFDA-FB0B-56A7-D5BA-52FF6C57131C">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>ASSIGNEDCASES</sourceObjSchema>
+<sourceObjName>CASE_ID</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>B494F6EF-B1BA-A16A-967C-8151E61F3A91</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,7,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F97C029-BF49-0038-2F68-7306B238BC81" referredColumn="4C2A8CFB-9B49-84EE-5DF8-F88871EEA634"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D9AE30C-8944-B3BB-B59C-CD4636172FCF" name="ASSIGNEDCASES_PK">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>ASSIGNEDCASES_PK</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>47D21C2A-7B0E-4035-6E06-2879BC54A0D9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6212EEB8-0750-412C-F0C8-14D720AE87F6"/>
+<colUsage columnID="7127CFDA-FB0B-56A7-D5BA-52FF6C57131C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE92DCD5-6876-62CD-6168-F8F385DDF8EB" schemaObject="EEBBB7CD-7796-D5C6-5958-C075BBD5B84A" name="ASSIGNEDCASES_PK">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>ASSIGNEDCASES_PK</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>D1C00E2A-2CF4-4D34-B4A9-A27C277C6C52</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6212EEB8-0750-412C-F0C8-14D720AE87F6"/>
+<colUsage columnID="7127CFDA-FB0B-56A7-D5BA-52FF6C57131C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44A2BC03-0F75-EFBF-BDDE-EF6272BC57E6" name="ASSIGNEDCASES_FK_CASE">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7127CFDA-FB0B-56A7-D5BA-52FF6C57131C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="365E2431-2D80-7D11-423E-4E07FBE9A93B" name="ASSIGNEDCASES_FK_EMPLOYEE">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6212EEB8-0750-412C-F0C8-14D720AE87F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

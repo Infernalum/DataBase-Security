@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="POSTS" directorySegmentName="seg_0" id="9ED33128-88AF-5128-5246-A01E200CEF56">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<schemaObject>EEBBB7CD-7796-D5C6-5958-C075BBD5B84A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6D8177C5-354F-ACD9-9F6C-2340C30AFB85</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="POST_NAME" id="4D4E5C98-8FE8-E4A9-9D7B-8AE92C639EF1">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCESS_LEVEL_ID" id="86BA29A9-2958-4DE5-32FD-F965DB64BEFF">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POST_ID" id="C31272EF-3DE3-92A2-6F47-89A3BD659C30">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="POSTS_PK" id="ED5466E6-6D7E-AA4A-6211-58BC421A05A3">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<schemaObject>EEBBB7CD-7796-D5C6-5958-C075BBD5B84A</schemaObject>
+<segment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="POSTS_FK" id="871019BE-A644-8B71-A28C-EADA8D7ED614">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="POSTS_PK" id="971537DC-EF78-8F9C-A8D3-55D0C7D7DDDC">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<segment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+<existingIndex>ED5466E6-6D7E-AA4A-6211-58BC421A05A3</existingIndex>
+<indexSegment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

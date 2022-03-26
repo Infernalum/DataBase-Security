@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B3F163E-D1E9-8930-D344-4033DDA063CC" schemaObject="EEBBB7CD-7796-D5C6-5958-C075BBD5B84A" name="DEPARTMENTS">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>DEPARTMENTS</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>A9DC3D6C-2BA3-3C93-7992-6A7C7AB0EE13</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPARTMENT_ID" id="7B99CBDA-BE79-2A8A-F409-D1CCA614C262">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>A9AF7196-AF30-C42B-3E76-0156860D1658</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_NAME" id="72E578CB-AA65-81EA-5E73-12D620DB7E07">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>DEPARTMENT_NAME</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>F3C9F677-76E8-8110-8698-F59F8AA77A7C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="D2014006-FD97-B771-B542-EDBFCF0C7DF9">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>53A5A3BE-AB86-5F29-5908-487EE603B2B0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6437744F-D81E-4E9B-5EE8-0BD0EAD59016" name="DEPARTMENTS_PK">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>DEPARTMENTS_PK</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>3696DB09-7AE0-48F6-592A-0CBB5E4F93CE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B99CBDA-BE79-2A8A-F409-D1CCA614C262"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B617F90-C1C5-0604-B437-BD01B1274F7F" schemaObject="EEBBB7CD-7796-D5C6-5958-C075BBD5B84A" name="DEPARTMENTS_PK">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>DEPARTMENTS_PK</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>F100A0CA-BD2C-55C7-B1A0-65FDD9580F0B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B99CBDA-BE79-2A8A-F409-D1CCA614C262"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

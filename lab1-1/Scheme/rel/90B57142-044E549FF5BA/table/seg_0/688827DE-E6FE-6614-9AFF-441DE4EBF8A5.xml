@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="688827DE-E6FE-6614-9AFF-441DE4EBF8A5" schemaObject="EEBBB7CD-7796-D5C6-5958-C075BBD5B84A" name="CASES">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>CASES</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>2F3B9EA2-ED56-55F8-CEC7-64571A50381D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CASE_ID" id="4C2A8CFB-9B49-84EE-5DF8-F88871EEA634">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>CASES</sourceObjSchema>
+<sourceObjName>CASE_ID</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>19815E1F-39FE-1ED7-1B39-36AD4AC5BAD1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,7,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_ID" id="6473E9EC-4623-D4AC-189C-B4FEB59F6867">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>CASES</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>58C73855-5372-FB36-E8C1-589851FEDDE8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D30DACB-0B74-786B-63A4-962041B8E7DA" referredColumn="7B99CBDA-BE79-2A8A-F409-D1CCA614C262"/>
+</associations>
+</Column>
+<Column name="STATUS_ID" id="D3FABD0D-030A-46AB-F097-B8A0EBDBCE01">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>CASES</sourceObjSchema>
+<sourceObjName>STATUS_ID</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>66EF5E90-A136-3E1D-DD76-88A900C5831C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FEFE7563-7A2B-EFFD-2924-B100F635FA04" referredColumn="56365483-2EF9-9ADC-F8DC-E8CD48BE3838"/>
+</associations>
+</Column>
+<Column name="ACCESS_LEVEL_ID" id="4D1F0F08-82A2-A639-EACC-0F453B94467C">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>CASES</sourceObjSchema>
+<sourceObjName>ACCESS_LEVEL_ID</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>B2CA79A7-6645-DAD8-562B-0578EAA4D3E3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5EA83336-8EE4-B228-E296-402F36FAD4D6" referredColumn="2620A3D3-2BF7-C31F-2AA7-EC8CE17FFABB"/>
+</associations>
+</Column>
+<Column name="START_DATE" id="709DF14F-8275-7148-B489-118625B11317">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>CASES</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>A4655C6E-B319-7CB7-8CBB-6C9E18F41F7B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLOSE_DATE" id="7DFE228C-DB20-06A4-FB7F-976B385B19EC">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>CASES</sourceObjSchema>
+<sourceObjName>CLOSE_DATE</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>DDF03DC9-FC83-EB01-2A0D-578DFD3AD29A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27FAE91C-353A-F8F7-0FD2-413B93E28ABB" name="CASES_PK">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>CASES_PK</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>B4CCD01A-83EF-C175-5BBE-130480F86C3F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C2A8CFB-9B49-84EE-5DF8-F88871EEA634"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A0977A3-1FAC-A2B8-6317-6EEB528C7B35" schemaObject="EEBBB7CD-7796-D5C6-5958-C075BBD5B84A" name="CASES_PK">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>CASES_PK</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>6C3321D1-446A-553B-CEB1-A0C3C652110C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C2A8CFB-9B49-84EE-5DF8-F88871EEA634"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76394FAD-3A2D-B9E0-A27E-0D03ABDB02DE" name="CASES_FK_ACCESS">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D1F0F08-82A2-A639-EACC-0F453B94467C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF66DF73-1DEC-B7B8-B6E8-68A40171D7EA" name="CASES_FK_DEPARTMENT">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6473E9EC-4623-D4AC-189C-B4FEB59F6867"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="267B45DB-F4E8-C753-E46D-F30913375DAB" name="CASES_FK_STATUS">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3FABD0D-030A-46AB-F097-B8A0EBDBCE01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

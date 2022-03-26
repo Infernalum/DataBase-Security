@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A96D73CF-2470-889C-1928-DC8A5F18FFD4" schemaObject="EEBBB7CD-7796-D5C6-5958-C075BBD5B84A" name="ACCESSLEVELS">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>ACCESSLEVELS</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>F7D74CD0-2422-3370-12B7-917D9CFE457F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACCESS_LEVEL_ID" id="2620A3D3-2BF7-C31F-2AA7-EC8CE17FFABB">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>ACCESSLEVELS</sourceObjSchema>
+<sourceObjName>ACCESS_LEVEL_ID</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>6C47C207-6982-B39B-AA52-A30C0347DDD5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCESS_LEVEL" id="C584197B-76A4-837C-A026-E62A260781DC">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>ACCESSLEVELS</sourceObjSchema>
+<sourceObjName>ACCESS_LEVEL</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>415A3992-A179-5FE0-54EE-F7587A3B421A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="22B7ABE3-604F-75E0-FF65-6AD5D75EFF72">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>ACCESSLEVELS</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>AB57B805-D018-A3D3-3DED-1F6C8E17C5B3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E62A720-FA00-694B-4270-C22F99906A7C" name="ACCESSLEVELS_PK">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>ACCESSLEVELS_PK</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>A6DCA39F-CF4F-BF08-BA19-26A95635A731</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2620A3D3-2BF7-C31F-2AA7-EC8CE17FFABB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C26459B-7A19-2D34-FF6F-7F6C09A96567" schemaObject="EEBBB7CD-7796-D5C6-5958-C075BBD5B84A" name="ACCESSLEVELS_PK">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>ACCESSLEVELS_PK</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>9FE2C2B4-391B-EFCB-1DC9-9BB8B19A4FAB</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2620A3D3-2BF7-C31F-2AA7-EC8CE17FFABB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

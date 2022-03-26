@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5EA83336-8EE4-B228-E296-402F36FAD4D6" containerWithKeyObject="688827DE-E6FE-6614-9AFF-441DE4EBF8A5" localFKIndex="76394FAD-3A2D-B9E0-A27E-0D03ABDB02DE" name="CASES_FK_ACCESS">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>CASES_FK_ACCESS</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>7E62EEB4-2974-022A-91CE-AB5383D15C4F</importedID>
+<referredTableLongName>INFERNAL.ACCESSLEVELS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A96D73CF-2470-889C-1928-DC8A5F18FFD4</referredTableID>
+<keyObject>1E62A720-FA00-694B-4270-C22F99906A7C</keyObject>
+<referredKeyID>1E62A720-FA00-694B-4270-C22F99906A7C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ACCESS_LEVEL_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

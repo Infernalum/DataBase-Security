@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8FDAA0D-334C-6AE4-F778-577DDB19F6ED" schemaObject="EEBBB7CD-7796-D5C6-5958-C075BBD5B84A" name="WORKSCHEDULE">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>WORKSCHEDULE</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>E93ED253-4755-EA85-5471-3984D628BA4F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="FA476106-43C4-E125-3790-2A7FA0B9489E">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>WORKSCHEDULE</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>91D43743-F483-90A6-3446-003EEF33F4D7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,7,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB7DF187-C1EA-AC7C-28C2-DDE8F21E7E3E" referredColumn="201694B1-B6D9-E368-C072-6A6B5A8FC057"/>
+</associations>
+</Column>
+<Column name="DAY_ID" id="B6C28773-B8D7-351C-2CF1-952CC987213A">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>WORKSCHEDULE</sourceObjSchema>
+<sourceObjName>DAY_ID</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>0502FF55-D0FA-FE6A-95F6-81DB5DC35D4B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A63A5D9D-4F24-9F95-208E-C469567CD6A2" referredColumn="12F981A8-11DB-0D11-4918-EBDDDECC2560"/>
+</associations>
+</Column>
+<Column name="OFFICE_HOURS_ID" id="9A1182A1-E8A7-7D91-14EB-37ADF66EEA66">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>WORKSCHEDULE</sourceObjSchema>
+<sourceObjName>OFFICE_HOURS_ID</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>4ABA93AD-2EB0-E59E-0FE1-A88CBEEFA027</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BCA5E1C0-A284-14FD-9C8F-DDEDFC1058C9" referredColumn="DCB07EDE-788D-B4E7-2362-4E802C298158"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55CA233F-63C4-9708-0050-0EA2B5B1E347" name="WORKSCHEDULE_PK">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>WORKSCHEDULE_PK</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>8CAA896D-4677-3F71-402C-45D5123E67FB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA476106-43C4-E125-3790-2A7FA0B9489E"/>
+<colUsage columnID="B6C28773-B8D7-351C-2CF1-952CC987213A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C96E82C6-2D03-EF99-76B3-909CF90805BA" schemaObject="EEBBB7CD-7796-D5C6-5958-C075BBD5B84A" name="WORKSCHEDULE_PK">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>WORKSCHEDULE_PK</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>45D41BB5-01E9-974D-A123-7CEA7308812D</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA476106-43C4-E125-3790-2A7FA0B9489E"/>
+<colUsage columnID="B6C28773-B8D7-351C-2CF1-952CC987213A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="825CADB1-0E4C-D292-C682-CD5B05DF4E68" name="WORKSCHEDULE_FK_DAY">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6C28773-B8D7-351C-2CF1-952CC987213A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC01F3B7-3E3E-62BC-4A96-BF5B91A743A4" name="WORKSCHEDULE_FK_EMPLOYEE">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA476106-43C4-E125-3790-2A7FA0B9489E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13366F7F-CE4A-3E52-A1EE-411D9A30A54B" name="WORKSCHEDULE_FK_OFFICE_HOURS">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A1182A1-E8A7-7D91-14EB-37ADF66EEA66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

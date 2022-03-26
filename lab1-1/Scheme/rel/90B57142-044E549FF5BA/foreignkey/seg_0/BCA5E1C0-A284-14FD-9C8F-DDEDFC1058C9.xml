@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BCA5E1C0-A284-14FD-9C8F-DDEDFC1058C9" containerWithKeyObject="E8FDAA0D-334C-6AE4-F778-577DDB19F6ED" localFKIndex="13366F7F-CE4A-3E52-A1EE-411D9A30A54B" name="WORKSCHEDULE_FK_OFFICE_HOURS">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>WORKSCHEDULE_FK_OFFICE_HOURS</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>A7387985-BF46-F70E-4462-3343B18BB07A</importedID>
+<referredTableLongName>INFERNAL.OFFICEHOURS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6C6FA31A-6FB8-93E4-A900-082C9628ABC2</referredTableID>
+<keyObject>687D0E08-4755-C471-EE12-EC3B2D3A8415</keyObject>
+<referredKeyID>687D0E08-4755-C471-EE12-EC3B2D3A8415</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>OFFICE_HOURS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

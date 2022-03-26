@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FEFE7563-7A2B-EFFD-2924-B100F635FA04" containerWithKeyObject="688827DE-E6FE-6614-9AFF-441DE4EBF8A5" localFKIndex="267B45DB-F4E8-C753-E46D-F30913375DAB" name="CASES_FK_STATUS">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>CASES_FK_STATUS</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>701547A6-3579-D1D7-118E-EDBBF9867401</importedID>
+<referredTableLongName>INFERNAL.STATUSSTATES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B35CE8E1-696E-119E-15AA-F19D825A2895</referredTableID>
+<keyObject>E223F2FC-63C8-F084-6CAC-DBD1547006E9</keyObject>
+<referredKeyID>E223F2FC-63C8-F084-6CAC-DBD1547006E9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>STATUS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

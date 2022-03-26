@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A63A5D9D-4F24-9F95-208E-C469567CD6A2" containerWithKeyObject="E8FDAA0D-334C-6AE4-F778-577DDB19F6ED" localFKIndex="825CADB1-0E4C-D292-C682-CD5B05DF4E68" name="WORKSCHEDULE_FK_DAY">
+<sourceConnName>DataBase Security</sourceConnName>
+<sourceObjSchema>INFERNAL</sourceObjSchema>
+<sourceObjName>WORKSCHEDULE_FK_DAY</sourceObjName>
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<importedID>8CE8FACC-980F-4556-427A-A96F7E801FC8</importedID>
+<referredTableLongName>INFERNAL.WEEKDAY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D34F89BF-4E13-7CFD-4DE7-8BA5E410EB5D</referredTableID>
+<keyObject>A5DF59A1-F404-8113-21C7-8D615DA5BFCA</keyObject>
+<referredKeyID>A5DF59A1-F404-8113-21C7-8D615DA5BFCA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DAY_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

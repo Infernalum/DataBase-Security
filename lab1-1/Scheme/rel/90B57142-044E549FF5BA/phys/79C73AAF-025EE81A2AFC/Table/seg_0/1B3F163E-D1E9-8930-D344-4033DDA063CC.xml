@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DEPARTMENTS" directorySegmentName="seg_0" id="1B3F163E-D1E9-8930-D344-4033DDA063CC">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<schemaObject>EEBBB7CD-7796-D5C6-5958-C075BBD5B84A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6D8177C5-354F-ACD9-9F6C-2340C30AFB85</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DEPARTMENT_NAME" id="72E578CB-AA65-81EA-5E73-12D620DB7E07">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTMENT_ID" id="7B99CBDA-BE79-2A8A-F409-D1CCA614C262">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPTION" id="D2014006-FD97-B771-B542-EDBFCF0C7DF9">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DEPARTMENTS_PK" id="2B617F90-C1C5-0604-B437-BD01B1274F7F">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<schemaObject>EEBBB7CD-7796-D5C6-5958-C075BBD5B84A</schemaObject>
+<segment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPARTMENTS_PK" id="6437744F-D81E-4E9B-5EE8-0BD0EAD59016">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<segment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+<existingIndex>2B617F90-C1C5-0604-B437-BD01B1274F7F</existingIndex>
+<indexSegment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

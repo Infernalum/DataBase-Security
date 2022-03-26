@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="EMPLOYEES" directorySegmentName="seg_0" id="0A43F11D-EC7F-5044-C4CB-743D8D08ECAC">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<schemaObject>EEBBB7CD-7796-D5C6-5958-C075BBD5B84A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6D8177C5-354F-ACD9-9F6C-2340C30AFB85</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="POST_ID" id="08298137-B116-7E5A-9DEA-13817A7E9F58">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_ID" id="201694B1-B6D9-E368-C072-6A6B5A8FC057">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FIRSR_NAME" id="592AA827-443D-AD39-D400-A8123A63C3B2">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTMENT_ID" id="5F012CB8-A8AC-CF7B-3032-C5F46F6F152B">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SECOND_NAME" id="70FDAD8B-2829-2336-9FB3-85AFAE67ADCF">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AGE" id="8DF038D9-E0BE-A616-C1C2-BBE891984554">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYMENT_DATE" id="D808578F-30A3-D300-67D4-11C61154036A">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PATRONYMIC" id="DEF5F5EB-8713-F32E-9CDC-C6225B38CA6F">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMPLOYEES_PK" id="6BD6E894-F198-71B3-7851-6FD0D89ADE82">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<schemaObject>EEBBB7CD-7796-D5C6-5958-C075BBD5B84A</schemaObject>
+<segment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMPLOYEES_FK_POST" id="150D4B13-50A6-D882-A1D8-ECD7DF72D6D7">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMPLOYEE_FK_DEPARTMENT" id="7A7FB795-A653-2EF5-1D16-2BE53332DE68">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EMPLOYEES_PK" id="A6897524-71B7-9588-3897-6DE670FD6A7F">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<segment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+<existingIndex>6BD6E894-F198-71B3-7851-6FD0D89ADE82</existingIndex>
+<indexSegment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

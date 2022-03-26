@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ACCESSLEVELS" directorySegmentName="seg_0" id="A96D73CF-2470-889C-1928-DC8A5F18FFD4">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<schemaObject>EEBBB7CD-7796-D5C6-5958-C075BBD5B84A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6D8177C5-354F-ACD9-9F6C-2340C30AFB85</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCRIPTION" id="22B7ABE3-604F-75E0-FF65-6AD5D75EFF72">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCESS_LEVEL_ID" id="2620A3D3-2BF7-C31F-2AA7-EC8CE17FFABB">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCESS_LEVEL" id="C584197B-76A4-837C-A026-E62A260781DC">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ACCESSLEVELS_PK" id="8C26459B-7A19-2D34-FF6F-7F6C09A96567">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<schemaObject>EEBBB7CD-7796-D5C6-5958-C075BBD5B84A</schemaObject>
+<segment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ACCESSLEVELS_PK" id="1E62A720-FA00-694B-4270-C22F99906A7C">
+<createdBy>vladi</createdBy>
+<createdTime>2022-03-26 21:05:40 UTC</createdTime>
+<ownerDesignName>Scheme</ownerDesignName>
+<segment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</segment>
+<tableSpace>27CEECAB-5629-942A-FD5B-228605C5E351</tableSpace>
+<existingIndex>8C26459B-7A19-2D34-FF6F-7F6C09A96567</existingIndex>
+<indexSegment>F7F1029D-BEF7-9728-C6C1-10671C6F2672</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>
