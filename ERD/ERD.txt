@@ -65,7 +65,7 @@ skinparam linetype ortho
     entity OfficeHours <<(E, Grey)>> {
     	Types of working hours table.
     	==
-    	#**office_hours_id** : NUMBER(1, 0) -- идентификатор времени рабочей смены
+    	#**office_hours_id** : NUMBER(2, 0) -- идентификатор времени рабочей смены
     	--
     	start_time : DATE **NOT NULL** -- время начала смены
     	end_time : DATE **NOT NULL** -- время окончания смены
@@ -96,7 +96,7 @@ skinparam linetype ortho
     entity Employees <<(E, Grey)>> {
     	Employees table.
     	==
-    	#**employee_id** : NUMBER(4, 0) -- Персональный номер сотрудника
+    	#**employee_id** : NUMBER(5, 0) -- Персональный номер сотрудника
     	--
     	+**department_id** : **NOT NULL** -- Отдел служащего
     	--
