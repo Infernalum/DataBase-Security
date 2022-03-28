@@ -1,0 +1,14 @@
+MAIN: уровень допуска должен быть индивидуален у каждого из сотрудников!
+- Изменены размеры: 
+WeekDay::description с 15 на 22;
+StatusStates::description с 100 до 200;
+Departments: department_name с 20 на 200
+             description с 100 до 200
+Posts: 
+	MODIFY post_name VARCHAR2(200) NOT NULL;
+	ADD description VARCHAR2(200) NOT NULL;
+
+Employees:
+added FK access_level_id;
+fisrt_name, second_name и patronymic с 15 на 30;
+
