@@ -12,9 +12,9 @@ skinparam linetype ortho
     	==
     	#**department_id** : NUMBER(2, 0) -- код отдела
     	--
-    	name : VARCHAR2(20) **NOT NULL** -- название отдела
+    	name : VARCHAR2(200) **NOT NULL** -- название отдела
     	--
-    	description : VARCHAR2(50) -- более подробное описание (link) отдела
+    	description : VARCHAR2(200) -- более подробное описание (link) отдела
   
     }
     
@@ -26,7 +26,7 @@ skinparam linetype ortho
     	--
     	access_level : NUMBER(2, 0) -- уровень допуска (для возможности упорядочивания не по PKey и модификации иерархии)
     	--
-    	description : VARCHAR2(200) -- более подробная информация (ink) по уровню
+    	description : VARCHAR2(300) -- более подробная информация (ink) по уровню
     
     } 
     
@@ -43,12 +43,11 @@ skinparam linetype ortho
     entity Posts <<(E, Grey)>> {
     	Posts and its levels table.
     	==
-    	#**post_id** : NUMBER(1, 0) -- идентификатор должности
+    	#**post_id** : NUMBER(2, 0) -- идентификатор должности 
     	--
-    	+**access_level_id** -- уровень допуска, соотвествующий должности 
+       	post_name : VARCHAR2(200) -- название должности 
     	--
-       	name : VARCHAR2(30) -- название должности 
-    	
+    	description : VARCAHR2(200) -- описание должности
     }
     
     
@@ -57,7 +56,7 @@ skinparam linetype ortho
     	==
     	#**day_id** : NUMBER(1, 0) -- идентификатор дня недели
     	--
-    	day : VARCHAR2(15) **NOT NULL** -- название дня недели
+    	day : VARCHAR2(22) **NOT NULL** -- название дня недели
     
     
     }
@@ -78,17 +77,18 @@ skinparam linetype ortho
     	==
     	#**case_id** : NUMBER(7, 0) -- идентификатор дела
     	--
-    	+**department_id** -- код отдела, который занимается делом
+    	case_name : VARCHAR2(100) -- заголовок дела
     	--
-    	+**status_id** -- статус дела 
+    	+**status_id** -- статус дела
     	--
     	+**access_level_id** -- необходимый уровень допуска для работы над делом
+   	--
+    	description : VARCHAR2(400) -- описание (link) дела
     	--
     	start_date : DATE -- дата начала работы над делом (как только назначился сотрудник)
     	--
     	end_date : DATE -- дата закрытия дела
-    	--
-    	description : VARCHAR2(50) -- описание (link) дела
+ 
     
     }
     
@@ -96,17 +96,18 @@ skinparam linetype ortho
     entity Employees <<(E, Grey)>> {
     	Employees table.
     	==
-    	#**employee_id** : NUMBER(5, 0) -- Персональный номер сотрудника
+    	#**employee_id** : NUMBER(7, 0) -- Персональный номер сотрудника
     	--
     	+**department_id** : **NOT NULL** -- Отдел служащего
     	--
     	+**post_id** : **NOT NULL** -- Должность служащего
     	--
-    	first_name : VARCHAR2(15) **NOT NULL** -- Имя
+    	+**access_level_id** : **NOT NULL** -- персональный уровень доступа сотрудника
+    	first_name : VARCHAR2(30) **NOT NULL** -- Имя
     	--
-    	second_name : VARCHAR(15) -- Фамилия
+    	second_name : VARCHAR(30) -- Фамилия
     	--
-    	patronymic : VARCHAR(15) -- Отчество 
+    	patronymic : VARCHAR(30) -- Отчество 
     	--
     	age : NUMBER(2, 0) **NOT NULL** -- Возраст
     	--
@@ -134,25 +135,21 @@ skinparam linetype ortho
     	--
     	#**case_id** -- Составной первичный ключ (номер дела, которым он занимается / занимался)
     
-    
-    
     } 
     
-    Employees "1..n" -- "1" Departments : department_id
-    Employees "1..n" -- "1" Posts : post_id
     
+    Employees }|--|| Departments : department_id
+    Employees }|--|| Posts : post_id
+    Employees }|--|| AccessLevels : access_level_id
 
-    Cases "1..n" -- "1" StatusStates : status_id
-    Cases "1..n" -- "1" AccessLevels : access_level_id
-    Cases "1..n" -- "1" Departments : department_id
+    Cases }|--|| StatusStates : status_id
+    Cases }|--|| AccessLevels : access_level_id
     
-    Posts "1..n" -- "1" AccessLevels : access_level_id
+    WorkSchedule }|--|| WeekDay : day_id
+    WorkSchedule }|--|| Employees : employee_id
+    WorkSchedule }|--|| OfficeHours : office_hours_id
     
-    WorkSchedule "1..n" -- "1" WeekDay : day_id
-    WorkSchedule "1..n" -- "1" Employees : employee_id
-    WorkSchedule "1..n" -- "1" OfficeHours : office_hours_id
-    
-    AssignedCases "0..n" -- "0..1" Employees : employee_id
-    AssignedCases "0..n" -- "0..1" Cases : case_id
+    AssignedCases }o--|{ Employees : employee_id
+    AssignedCases }o--|{ Cases : case_id
     
 @enduml
