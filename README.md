@@ -3,4 +3,4 @@
 Реализация и лабораторные работы базы данных "Полицеского департамента"
 
 ER-diagram: 
-![It was supposed to be a picture](https://github.com/Infernalum/DataBase-Security/blob/main/ERD/ERD.png)
+![It was supposed to be a picture](https://github.com/Infernalum/DataBase-Security/blob/main/ERD/ERD 1-2.png)
