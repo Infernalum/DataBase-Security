@@ -24,9 +24,9 @@ skinparam linetype ortho
     	==
     	#**access_level_id** : NUMBER(2, 0) -- идентификатор уровня допуска
     	--
-    	access_level : NUMBER(2, 0) -- уровень допуска (для возможности упорядочивания не по PKey и модификации иерархии)
+    	access_level : NUMBER(2, 0) **NOT NULL** -- уровень допуска (для возможности упорядочивания не по PKey и модификации иерархии)
     	--
-    	description : VARCHAR2(300) -- более подробная информация (ink) по уровню
+    	description : VARCHAR2(300) **NOT NULL** -- более подробная информация (ink) по уровню
     
     } 
     
@@ -36,7 +36,7 @@ skinparam linetype ortho
     	==
     	#**status_id** : NUMBER(1, 0) -- статус
     	--
-    	description : VARCHAR2(50) -- информация (link) по статусу
+    	description : VARCHAR2(50) **NOT NULL** -- информация (link) по статусу
     
     } 
     
@@ -45,7 +45,7 @@ skinparam linetype ortho
     	==
     	#**post_id** : NUMBER(2, 0) -- идентификатор должности 
     	--
-       	post_name : VARCHAR2(200) -- название должности 
+       	post_name : VARCHAR2(200) **NOT NULL** -- название должности 
     	--
     	description : VARCAHR2(200) -- описание должности
     }
@@ -79,11 +79,11 @@ skinparam linetype ortho
     	--
     	case_name : VARCHAR2(100) -- заголовок дела
     	--
-    	+**status_id** -- статус дела
+    	+**status_id**: **NOT NULL** -- статус дела
     	--
-    	+**access_level_id** -- необходимый уровень допуска для работы над делом
+    	+**access_level_id**: **NOT NULL** -- необходимый уровень допуска для работы над делом
    	--
-    	description : VARCHAR2(400) -- описание (link) дела
+    	description : VARCHAR2(400) **NOT NULL** -- описание (link) дела
     	--
     	start_date : DATE -- дата начала работы над делом (как только назначился сотрудник)
     	--
@@ -103,6 +103,7 @@ skinparam linetype ortho
     	+**post_id** : **NOT NULL** -- Должность служащего
     	--
     	+**access_level_id** : **NOT NULL** -- персональный уровень доступа сотрудника
+    	--
     	first_name : VARCHAR2(30) **NOT NULL** -- Имя
     	--
     	second_name : VARCHAR(30) -- Фамилия
