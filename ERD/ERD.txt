@@ -138,18 +138,18 @@ skinparam linetype ortho
     } 
     
     
-    Employees }|--|| Departments : department_id
-    Employees }|--|| Posts : post_id
-    Employees }|--|| AccessLevels : access_level_id
+    Employees }o--|| Departments : department_id
+    Employees }o--|| Posts : post_id
+    Employees }o--|| AccessLevels : access_level_id
 
-    Cases }|--|| StatusStates : status_id
-    Cases }|--|| AccessLevels : access_level_id
+    Cases }o--|| StatusStates : status_id
+    Cases }o--|| AccessLevels : access_level_id
     
-    WorkSchedule }|--|| WeekDay : day_id
-    WorkSchedule }|--|| Employees : employee_id
-    WorkSchedule }|--|| OfficeHours : office_hours_id
+    WorkSchedule }o--|| WeekDay : day_id
+    WorkSchedule }o--|| Employees : employee_id
+    WorkSchedule }o--o| OfficeHours : office_hours_id
     
-    AssignedCases }o--|{ Employees : employee_id
-    AssignedCases }o--|{ Cases : case_id
+    AssignedCases }o--|| Employees : employee_id
+    AssignedCases }o--|| Cases : case_id
     
 @enduml
