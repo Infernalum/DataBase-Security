@@ -1,0 +1,62 @@
+
+SQL*Loader: Release 18.0.0.0.0 - Production on Mon Apr 4 20:26:15 2022
+Version 18.4.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   ./Employees.ctl
+Character Set UTF8 specified for all input.
+
+Data File:      Employees.csv
+  Bad File:     ./Employees.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table INFERNAL.EMPLOYEES2, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+EMPLOYEE_ID                         FIRST     *   ;  O(") CHARACTER            
+DEPARTMENT_ID                        NEXT     *   ;  O(") CHARACTER            
+POST_ID                              NEXT     *   ;  O(") CHARACTER            
+ACCESS_LEVEL_ID                      NEXT     *   ;  O(") CHARACTER            
+FIRST_NAME                           NEXT    30   ;  O(") CHARACTER            
+SECOND_NAME                          NEXT    30   ;  O(") CHARACTER            
+PATRONYMIC                           NEXT    30   ;  O(") CHARACTER            
+AGE                                  NEXT     *   ;  O(") CHARACTER            
+EMPLOYMENT_DATE                      NEXT     *   ;  O(") DATE YYYY-MM-DD:HH24:MI:SS
+
+Record 11: Rejected - Error on table INFERNAL.EMPLOYEES2, column EMPLOYMENT_DATE.
+ORA-01861: literal does not match format string
+
+
+Table INFERNAL.EMPLOYEES2:
+  33 Rows successfully loaded.
+  1 Row not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 411000 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:            34
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Mon Apr 04 20:26:15 2022
+Run ended on Mon Apr 04 20:26:16 2022
+
+Elapsed time was:     00:00:01.27
+CPU time was:         00:00:00.09

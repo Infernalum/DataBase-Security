@@ -1,0 +1,52 @@
+
+SQL*Loader: Release 18.0.0.0.0 - Production on Mon Apr 4 19:29:19 2022
+Version 18.4.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   ./StatusStates.ctl
+Character Set UTF8 specified for all input.
+
+Data File:      StatusStates.csv
+  Bad File:     ./StatusStates.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table INFERNAL.STATUSSTATES2, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+STATUS_ID                           FIRST     *   ;  O(") CHARACTER            
+DESCRIPTION                          NEXT   200   ;  O(") CHARACTER            
+
+
+Table INFERNAL.STATUSSTATES2:
+  3 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 115000 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:             3
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Mon Apr 04 19:29:19 2022
+Run ended on Mon Apr 04 19:29:21 2022
+
+Elapsed time was:     00:00:01.53
+CPU time was:         00:00:00.07

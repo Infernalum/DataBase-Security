@@ -1,7 +1,7 @@
 CREATE TABLE WeekDay
 (
     day_id NUMBER(1,0),
-    description VARCHAR2(20) NOT NULL,
+    description VARCHAR2(22) NOT NULL,
     CONSTRAINT WeekDay_pk PRIMARY KEY (day_id)
 );
 
@@ -16,35 +16,32 @@ CREATE TABLE OfficeHours
 CREATE TABLE StatusStates
 (
     status_id  NUMBER(1,0),
-    description VARCHAR2(100) NOT NULL,
+    description VARCHAR2(200) NOT NULL,
     CONSTRAINT StatusStates_pk PRIMARY KEY (status_id)
 );
 
 CREATE TABLE AccessLevels
 (
-    access_level_id  NUMBER(1,0),
+    access_level_id  NUMBER(2,0),
     access_level NUMBER(2,0) NOT NULL,
-    description VARCHAR2(200) NOT NULL,
+    description VARCHAR2(300) NOT NULL,
     CONSTRAINT AccessLevels_pk PRIMARY KEY (access_level_id)
 );
 
 CREATE TABLE Posts
 (
     post_id  NUMBER(2,0),
-    access_level_id NOT NULL,
-    post_name VARCHAR2(20) NOT NULL,
+    post_name VARCHAR2(200) NOT NULL,
+    description VARCHAR2(200) NOT NULL,
     CONSTRAINT Posts_pk 
-        PRIMARY KEY (post_id),
-    CONSTRAINT Posts_fk 
-        FOREIGN KEY (access_level_id) 
-        REFERENCES AccessLevels(access_level_id)
+        PRIMARY KEY (post_id)
 );
 
 CREATE TABLE Departments
 (
     department_id  NUMBER(2,0),
-    department_name VARCHAR2(20) NOT NULL,
-    description VARCHAR2(50) NOT NULL,
+    department_name VARCHAR2(200) NOT NULL,
+    description VARCHAR2(200) NOT NULL,
     CONSTRAINT Departments_pk PRIMARY KEY (department_id)
 );
 
@@ -52,15 +49,13 @@ CREATE TABLE Departments
 CREATE TABLE Cases
 (
     case_id  NUMBER(7,0),
-    department_id NOT NULL,
+    case_name VARCHAR2(100) NOT NULL,
     status_id NOT NULL,
     access_level_id NOT NULL,
+    description VARCHAR2(400) NOT NULL,
     start_date DATE,
     close_date DATE,
     CONSTRAINT Cases_pk PRIMARY KEY (case_id),
-    CONSTRAINT Cases_fk_department
-        FOREIGN KEY (department_id) 
-        REFERENCES Departments(department_id),
     CONSTRAINT Cases_fk_status
         FOREIGN KEY (status_id) 
         REFERENCES StatusStates(status_id),
@@ -74,19 +69,22 @@ CREATE TABLE Employees
     employee_id  NUMBER(7,0),
     department_id NOT NULL,
     post_id NOT NULL,
-    firsr_name VARCHAR2(15) NOT NULL,
-    second_name VARCHAR2(15) NOT NULL,
-    patronymic VARCHAR2(15),
+    access_level_id NOT NULL,
+    first_name VARCHAR2(30) NOT NULL,
+    second_name VARCHAR2(30) NOT NULL,
+    patronymic VARCHAR2(30),
     age NUMBER(2, 0) NOT NULL,
     employment_date DATE NOT NULL,
     CONSTRAINT Employees_pk PRIMARY KEY (employee_id),
-    CONSTRAINT Employee_fk_department
+    CONSTRAINT Employees_fk_department
         FOREIGN KEY (department_id) 
         REFERENCES Departments(department_id),
     CONSTRAINT Employees_fk_post
         FOREIGN KEY (post_id) 
-        REFERENCES Posts(post_id)
-        
+        REFERENCES Posts(post_id),
+    CONSTRAINT Employees_fk_access
+        FOREIGN KEY (access_level_id) 
+        REFERENCES AccessLevels(access_level_id)
 );
 
 CREATE TABLE WorkSchedule
@@ -117,5 +115,4 @@ CREATE TABLE AssignedCases
     CONSTRAINT AssignedCases_fk_case
         FOREIGN KEY (case_id) 
         REFERENCES Cases(case_id)
-        
 );

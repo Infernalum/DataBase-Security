@@ -1,0 +1,9 @@
+OPTIONS (SKIP=1)
+LOAD DATA
+CHARACTERSET UTF8
+INFILE 'Cases.csv'
+INTO TABLE INFERNAL.CASES2
+FIELDS TERMINATED BY ";"
+OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS
+( case_id, case_name, status_id, access_level_id, description char(400), start_date DATE "DD-MM-YYYY", close_date DATE "DD-MM-YYYY")
