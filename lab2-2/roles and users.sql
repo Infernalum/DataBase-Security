@@ -237,6 +237,15 @@ GRANT CREATE SESSION TO Skinner;
 GRANT leadership_dep TO Skinner;
 
 
+CREATE USER Veronika 
+    IDENTIFIED BY 1234
+    DEFAULT TABLESPACE users
+    TEMPORARY TABLESPACE temp
+    QUOTA 100M ON users;
+    
+GRANT CREATE SESSION TO Veronika;
+
+GRANT hr_dep TO Veronika;
 
 
 
